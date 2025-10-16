@@ -2,6 +2,9 @@
 out/
 !**/src/main/**/out/
 !**/src/test/**/out/
+/results/geradorGraficos.py
+/graficos/
+/graficos_simplificados/
 
 ### Eclipse ###
 .apt_generated
