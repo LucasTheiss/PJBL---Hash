@@ -22,11 +22,19 @@ Motivação de escolhas:
 
 ### Métricas de Avaliação
 - Tempo de inserção
-- Tempo de busca
 - Número total de colisões
 
-Parâmetros do Experimento
-Função Hash Primária: Para todas as estratégias, foi utilizada a função do Método da Divisão: h(k) = k % M, onde k é a chave (código do registro) e M é o tamanho do vetor.
+### Função Hash Primária - Método da Divisão
+A implementação utiliza um método pesquisado que é uma variação do método da divisão com proteção contra valores negativos:
+```java
+private int hash(int key) {
+    return (key & 0x7FFFFFFF) % size;
+}
+```
+
+**Detalhamento do método:**
+1. `key & 0x7FFFFFFF`: Operação bitwise AND com uma máscara que garante valor positivo
+2. `% size`: Divisão pelo tamanho da tabela para obter o índice
 
 Tamanhos da Tabela (Vetor M): 100.000, 1.000.000 e 10.000.000 posições.
 

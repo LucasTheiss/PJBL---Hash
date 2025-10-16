@@ -4,8 +4,7 @@ out/
 !**/src/test/**/out/
 /results/geradorGraficos.py
 /graficos/
-/graficos_simplificados/
-/graficos_simplificados2/
+/graficos_simplificados*/
 ### Eclipse ###
 .apt_generated
 .classpath
