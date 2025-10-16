@@ -22,12 +22,12 @@ public class SondagemLinearHashTable {
     }
 
     public void insert(Registro registro) {
-        if ((double)currentSize / size > 0.95) {
-            return;
+//        if ((double)currentSize / size > 0.95) {
+//            return;
 //             como pesquisado, é comum parar de inserir a partir de certa porcentagem de agrupamento,
 //             pois a partir de certo ponto, seria imprático e não performático percorrer o array até encontrar o espaço vazio
 //             escolhemos fazer isso para ser o mais justo possível com todas as implementações de hash e a sondagem quadrática pode gerar loops infinitos (então também limitamos a quantidade aqui)
-        }
+//        }
 
         int initialIndex = hash(registro.codigo);
         int currentIndex = initialIndex;

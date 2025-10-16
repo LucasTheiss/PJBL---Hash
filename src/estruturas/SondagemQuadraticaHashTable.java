@@ -20,10 +20,10 @@ public class SondagemQuadraticaHashTable {
     }
 
     public void insert(Registro registro) {
-        if ((double)currentSize / size > 0.95) {
+//        if ((double)currentSize / size > 0.95) {
             // pode gerar loops infinitos em situações especificas caso esteja muito cheia ou prejudicar muito a performance
-            return;
-        }
+//            return;
+//        }
 
         int initialIndex = hash(registro.codigo);
         int currentIndex = initialIndex;
