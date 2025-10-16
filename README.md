@@ -24,7 +24,7 @@ Motivação de escolhas:
 - Tempo de inserção
 - Número total de colisões
 
-### Função Hash Primária - Método da Divisão
+#### Função Hash Primária - Método da Divisão
 A implementação utiliza um método pesquisado que é uma variação do método da divisão com proteção contra valores negativos:
 ```java
 private int hash(int key) {
@@ -35,6 +35,8 @@ private int hash(int key) {
 **Detalhamento do método:**
 1. `key & 0x7FFFFFFF`: Operação bitwise AND com uma máscara que garante valor positivo
 2. `% size`: Divisão pelo tamanho da tabela para obter o índice
+
+#### Outros detalhes
 
 Tamanhos da Tabela (Vetor M): 100.000, 1.000.000 e 10.000.000 posições.
 
